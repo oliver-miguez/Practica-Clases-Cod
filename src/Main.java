@@ -20,7 +20,6 @@ public class Main {
         int vidas_restantes = personaje1.perderVida(danho);
         if(vidas_restantes == respuesta_esperada){System.out.println("1: ok");} else System.out.println("1: error");
 
-
         //test2
         personaje1.setVidas(1000);
         int danho2 = 1100;
@@ -35,5 +34,11 @@ public class Main {
         int vidas_restantes3 = personaje1.perderVida(danho3);
         if(vidas_restantes3 == respuesta_esperada3){System.out.println("3: ok");} else System.out.println("3: error");
 
+        //test4
+        personaje1.setVidas(100);
+        int danho4 = -1000;
+        int respuesta_esperada4 = 100;
+        int vidas_restantes4 = personaje1.perderVida(danho4);
+        if(vidas_restantes4 == respuesta_esperada4){System.out.println("4: ok");} else System.out.println("4: error");
     }//end main
 }//end class

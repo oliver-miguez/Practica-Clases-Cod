@@ -30,8 +30,10 @@ public class Personaje {
      * @return vidas que quedan
      */
     public int perderVida (int danho){
+        if(danho < 0) danho = 0; //arregla el fallo de introducir daño negativo
         vidas = vidas - danho ;
         if(vidas < 0 ) vidas = 0; //arregla el fallo de vida negativa descubierto en los test
+
         return vidas;
     }
 

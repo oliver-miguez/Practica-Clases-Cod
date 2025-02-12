@@ -28,6 +28,12 @@ public class Main {
         int vidas_restantes2 = personaje1.perderVida(danho2);
         if(vidas_restantes2 == respuesta_esperada2){System.out.println("2: ok");} else System.out.println("2: error");
 
+        //test3
+        personaje1.setVidas(1000);
+        int danho3 = -100;
+        int respuesta_esperada3 = personaje1.getVidas();
+        int vidas_restantes3 = personaje1.perderVida(danho3);
+        if(vidas_restantes3 == respuesta_esperada3){System.out.println("3: ok");} else System.out.println("3: error");
 
     }//end main
 }//end class

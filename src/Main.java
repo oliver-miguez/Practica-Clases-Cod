@@ -5,5 +5,6 @@ public class Main {
         Personaje personaje2 = new Personaje("Vegeta");//crea un personaje en el cual tú tienes que meter los datos en la main
         System.out.println("hola "+ personaje1.nome);
         System.out.println("hola " +personaje2.nome);
+        System.out.println("vidas personaje 1: "+ personaje1.vidas);
     }//end main
 }//end class

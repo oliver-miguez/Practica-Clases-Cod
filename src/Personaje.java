@@ -3,10 +3,11 @@ public class Personaje {
     String nome ;
 
     //las vidas
-    int vidas;
+    private int vidas;
 
     /**
      * Constructor por defecto
+     * Personaje 1
      */
     public Personaje(){
         this.nome = "Mutenroy";
@@ -15,6 +16,7 @@ public class Personaje {
 
     /**
      * Constructor que personaliza el nombre
+     * Personaje 2
      * @param nuevoNombre del personaje
      */
      public Personaje(String nuevoNombre){
@@ -31,6 +33,17 @@ public class Personaje {
         vidas = vidas - danho ;
         return vidas;
     }
+
+
+    public int getVidas() {
+        return vidas;
+    }
+
+    public void setVidas(int vidas) {
+        this.vidas = vidas;
+    }
+
+
 
 
 }//end class

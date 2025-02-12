@@ -31,6 +31,7 @@ public class Personaje {
      */
     public int perderVida (int danho){
         vidas = vidas - danho ;
+        if(vidas < 0 ) vidas = 0; //arregla el fallo de vida negativa descubierto en los test
         return vidas;
     }
 

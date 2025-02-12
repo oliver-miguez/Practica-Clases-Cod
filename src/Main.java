@@ -18,7 +18,15 @@ public class Main {
         int danho = 100;
         int respuesta_esperada = 900;
         int vidas_restantes = personaje1.perderVida(danho);
-        if(vidas_restantes == respuesta_esperada){System.out.println("ok");} else System.out.println("error");
+        if(vidas_restantes == respuesta_esperada){System.out.println("1: ok");} else System.out.println("1: error");
+
+
+        //test2
+        personaje1.setVidas(1000);
+        int danho2 = 1100;
+        int respuesta_esperada2 = 0;
+        int vidas_restantes2 = personaje1.perderVida(danho2);
+        if(vidas_restantes2 == respuesta_esperada2){System.out.println("2: ok");} else System.out.println("2: error");
 
 
     }//end main

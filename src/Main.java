@@ -13,13 +13,14 @@ public class Main {
         System.out.println("vidas personaje 1: "+ personaje1.getVidas());
         System.out.println("Vidas Personaje 1: "+ una_variable);
 
-
-
         //test4
         personaje1.setVidas(100);
         int danho4 = -1000;
         int respuesta_esperada4 = 100;
         int vidas_restantes4 = personaje1.perderVida(danho4);
         if(vidas_restantes4 == respuesta_esperada4){System.out.println("4: ok");} else System.out.println("4: error");
+
+
+
     }//end main
 }//end class

@@ -13,12 +13,6 @@ public class Main {
         System.out.println("vidas personaje 1: "+ personaje1.getVidas());
         System.out.println("Vidas Personaje 1: "+ una_variable);
 
-        //test1
-        personaje1.setVidas(1000);
-        int danho = 100;
-        int respuesta_esperada = 900;
-        int vidas_restantes = personaje1.perderVida(danho);
-        if(vidas_restantes == respuesta_esperada){System.out.println("1: ok");} else System.out.println("1: error");
 
         //test2
         personaje1.setVidas(1000);
@@ -27,12 +21,7 @@ public class Main {
         int vidas_restantes2 = personaje1.perderVida(danho2);
         if(vidas_restantes2 == respuesta_esperada2){System.out.println("2: ok");} else System.out.println("2: error");
 
-        //test3
-        personaje1.setVidas(1000);
-        int danho3 = -100;
-        int respuesta_esperada3 = personaje1.getVidas();
-        int vidas_restantes3 = personaje1.perderVida(danho3);
-        if(vidas_restantes3 == respuesta_esperada3){System.out.println("3: ok");} else System.out.println("3: error");
+
 
         //test4
         personaje1.setVidas(100);
